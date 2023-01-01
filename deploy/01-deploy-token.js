@@ -9,14 +9,6 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
         arg: [],
         log: true,
     })
-    // const chainId = networks.name.chainId
-    // const ChairCoin = ethers.getContract("ChairCoin")
-    // const contractAddress = (await ChairCoin).address
-    // if (chainId !== 31337) {
-    //     await run("verify:verify", {
-    //         address: contractAddress,
-    //     })
-    // }
 }
 
 module.exports.tags = ["ChairCoin", "all"]

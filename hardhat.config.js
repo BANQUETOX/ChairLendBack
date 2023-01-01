@@ -17,7 +17,7 @@ module.exports = {
         hardhat: {
             chainId: 31337,
         },
-        mumbai: {
+        polygonMumbai: {
             chainId: 80001,
             url: MUMBAI_RPC_URL,
             accounts: [PRIVATE_KEY],
@@ -45,7 +45,7 @@ module.exports = {
     },
     etherscan: {
         apiKey: {
-            mumbai: POLYSCAN_API_KEY,
+            polygonMumbai: POLYSCAN_API_KEY,
             polygon: POLYSCAN_API_KEY,
         },
     },
