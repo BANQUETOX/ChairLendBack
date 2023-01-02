@@ -18,7 +18,7 @@ describe("ChairLend testing", () => {
             assert.equal(contractOwner, deployer)
         })
         it("ChairLend get tokens", async () => {
-            const mintedTokens = ethers.utils.parseEther("100")
+            const mintedTokens = ethers.utils.parseEther("1000")
             const chairLendTokenBalance =
                 await ChairLend.getContractTokenBalance()
             assert.equal(
@@ -94,8 +94,8 @@ describe("ChairLend testing", () => {
         })
 
         it("Reverts when contract run out of tokens", async () => {
-            const sendValue = ethers.utils.parseEther("500")
-            const borrowAmount = ethers.utils.parseEther("250")
+            const sendValue = ethers.utils.parseEther("5000")
+            const borrowAmount = ethers.utils.parseEther("2500")
             await userChairLend.deposit({ value: sendValue })
             await expect(
                 userChairLend.borrow(borrowAmount)
